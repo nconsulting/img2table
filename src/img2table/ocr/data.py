@@ -71,7 +71,7 @@ class OCRDataframe:
                                 pl.col('y1').min(),
                                 pl.col('y2').max(),
                                 pl.col('value').alias('value')])
-                          .sort([pl.col("y1"), pl.col("x1")])
+                          .sort([pl.col("x1")])
                           )
 
         # Concatenate all rows
